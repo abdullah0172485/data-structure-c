@@ -9,7 +9,7 @@ int main (){
     }
     printf("You entered:\n");
     for(i=0;i<5;i++){
-        printf("%d",arr[i]);
+        printf("%d\n",arr[i]);
     }
     //Finding the leargest.
     largest=arr[0];
@@ -19,4 +19,18 @@ int main (){
         }
     }
     printf("\nLargest number is = %d\n",largest);
+    //Finding the smallest number.
+    int smallest=arr[0];
+    for (i=0;i<5;i++){
+        if(arr[i]<smallest){
+            smallest=arr[i];
+        }
+    }
+    printf("\nThe smallest number is= %d\n",smallest);
+    //Finding the some.
+    int sum=0;
+    for(i=0;i<5;i++){
+        sum=sum+arr[i];
+    }
+    printf("The sum of the array is = %d\n",sum);
 }
