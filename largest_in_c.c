@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 int main (){
     int arr[5];
     int largest;
@@ -33,4 +34,8 @@ int main (){
         sum=sum+arr[i];
     }
     printf("The sum of the array is = %d\n",sum);
+   float avg=sum/5.0;
+   printf("The avarage is = %.2f\n",avg);
+   getch();
+   return 0;
 }
